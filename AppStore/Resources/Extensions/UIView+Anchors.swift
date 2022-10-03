@@ -14,27 +14,27 @@ extension UIView {
         case allAxis
     }
     
-    func pin(top: NSLayoutYAxisAnchor, padding: CGFloat = .zero) -> Self {
+    func pin(top: NSLayoutYAxisAnchor, _ padding: CGFloat = .zero) -> Self {
         translatesAutoresizingMaskIntoConstraints = false
         topAnchor.constraint(equalTo: top, constant: padding).isActive = true
         return self
     }
     
-    func pin(bottom: NSLayoutYAxisAnchor, padding: CGFloat = .zero) -> Self {
+    func pin(bottom: NSLayoutYAxisAnchor, _ padding: CGFloat = .zero) -> Self {
         translatesAutoresizingMaskIntoConstraints = false
         bottomAnchor.constraint(equalTo: bottom, constant: -padding).isActive = true
         return self
     }
     
-    func pin(left: NSLayoutXAxisAnchor, padding: CGFloat = .zero) -> Self {
+    func pin(leading: NSLayoutXAxisAnchor, _ padding: CGFloat = .zero) -> Self {
         translatesAutoresizingMaskIntoConstraints = false
-        leftAnchor.constraint(equalTo: left, constant: padding).isActive = true
+        leadingAnchor.constraint(equalTo: leading, constant: padding).isActive = true
         return self
     }
     
-    func pin(right: NSLayoutXAxisAnchor, padding: CGFloat = .zero) -> Self {
+    func pin(trailing: NSLayoutXAxisAnchor, _ padding: CGFloat = .zero) -> Self {
         translatesAutoresizingMaskIntoConstraints = false
-        rightAnchor.constraint(equalTo: right, constant: -padding).isActive = true
+        trailingAnchor.constraint(equalTo: trailing, constant: -padding).isActive = true
         return self
     }
     

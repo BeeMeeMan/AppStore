@@ -8,11 +8,11 @@
 import UIKit
 
 extension UILabel {
-    func setText(_ text: String) -> Self {
-        self.text = text
-        return self
+    convenience init(_ title: String) {
+        self.init(frame: .zero)
+        self.text = title
     }
-    
+
     func setFont(_ font: UIFont = .systemFont(ofSize: 12), textColor: UIColor = .black) -> UILabel {
         self.font = font
         self.textColor = textColor

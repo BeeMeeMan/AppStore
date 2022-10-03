@@ -17,8 +17,7 @@ class AppsSearchController: UICollectionViewController {
     private var timer: Timer?
     
     private let searchController = UISearchController(searchResultsController: nil)
-    private let enterSearchTermLabel = UILabel()
-        .setText("Please enter search term above...")
+    private let enterSearchTermLabel = UILabel("Please enter search term above...")
         .setFont(.boldSystemFont(ofSize: 20))
         .setAlignment(.center)
     

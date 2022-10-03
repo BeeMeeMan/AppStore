@@ -26,6 +26,7 @@
 		8AE566E828EA07560027E040 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8AE566E728EA07560027E040 /* Kingfisher */; };
 		8AE566EA28EA07D30027E040 /* AppAppearence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE566E928EA07D30027E040 /* AppAppearence.swift */; };
 		8AE566F328EAD3FD0027E040 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE566F228EAD3FD0027E040 /* AppsViewController.swift */; };
+		8AE566F728EAD6B20027E040 /* AppsGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE566F628EAD6B20027E040 /* AppsGroupCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		8AE566E428E9F7840027E040 /* ResultListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultListViewModel.swift; sourceTree = "<group>"; };
 		8AE566E928EA07D30027E040 /* AppAppearence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearence.swift; sourceTree = "<group>"; };
 		8AE566F228EAD3FD0027E040 /* AppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsViewController.swift; sourceTree = "<group>"; };
+		8AE566F628EAD6B20027E040 /* AppsGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsGroupCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 		8AE566ED28EAD3C00027E040 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8AE566F628EAD6B20027E040 /* AppsGroupCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				8AE566F328EAD3FD0027E040 /* AppsViewController.swift in Sources */,
 				8AE566AB28E983DC0027E040 /* AppDelegate.swift in Sources */,
 				8AE566D728E9D1F90027E040 /* UIButton+Extensions.swift in Sources */,
+				8AE566F728EAD6B20027E040 /* AppsGroupCell.swift in Sources */,
 				8AE566D528E9D0C30027E040 /* UILable+Extensions.swift in Sources */,
 				8AE566EA28EA07D30027E040 /* AppAppearence.swift in Sources */,
 				8AE566AD28E983DC0027E040 /* SceneDelegate.swift in Sources */,

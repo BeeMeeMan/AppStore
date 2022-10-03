@@ -36,7 +36,7 @@ class AppsViewController: UICollectionViewController {
     
     private func configureUI() {
         collectionView.backgroundColor = .yellow
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView!.register(AppsGroupCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
     }
 }
@@ -45,21 +45,30 @@ class AppsViewController: UICollectionViewController {
 
 extension AppsViewController {
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 5
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? AppsGroupCell else { return UICollectionViewCell() }
+
+        
     
         // Configure the cell
     
         return cell
+    }
+}
+
+// MARK: UICollectionViewDataSource
+
+extension AppsViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        .init(width: view.frame.width, height: 250)
     }
 }

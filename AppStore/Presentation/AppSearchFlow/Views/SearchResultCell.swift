@@ -23,16 +23,13 @@ class SearchResultCell: UICollectionViewCell {
         .pinDimentions(height: 64, width: 64)
         .setCornerRadius(12)
     
-    private let nameLabel = UILabel()
-        .setText("APP NAME")
+    private let nameLabel = UILabel("APP NAME")
         .setFont()
     
-    private let categoryLabel = UILabel()
-        .setText("Photos & video")
+    private let categoryLabel = UILabel("Photos & video")
         .setFont()
     
-    private let ratingsLabel = UILabel()
-        .setText("9.26M")
+    private let ratingsLabel = UILabel("9.26M")
         .setFont()
     
     private let getButton = UIButton(type: .system)
